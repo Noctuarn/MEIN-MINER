@@ -1,0 +1,145 @@
+.footer {
+    background-color: #18154B;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px 30px;
+        }
+        
+        @media (max-width:500px) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}
+.body-footer {
+
+    &__column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.375;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #B8B8B8;
+        margin-bottom: 20px;
+
+        @media (max-width:768px) {
+            padding: 15px;
+            border: 2px solid white;
+            margin: 0;
+        
+            &:before{
+                content: '';
+                display: inline-block;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 10px solid #fff;
+                width: 0;
+                height: 0;
+                margin-right: 15px;
+                transform: rotate(-90deg);
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @media (max-width:768px) {
+           display: none;
+        }
+    }
+
+    &__links {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.33;
+        color: #FFFFFF;
+    }
+}
+.logo-footer {
+    gap: 16px;
+
+    img{
+        width: 133px;
+    }
+
+    @media (max-width:768px) {
+        gap: 20px;
+    }
+
+    .copyright {
+        display: block;
+
+        @media (max-width:768px) {
+            display: none;
+        }
+    }
+
+    .make-call {
+       display: none;
+
+        @media (max-width:768px) {
+            display: block;
+        }
+    }
+}
+
+.call-footer {
+    justify-content: space-between;
+    
+    .links-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &__item {
+            font-size: 15px;
+            line-height: 1.33;
+            text-align: right;
+            color: #B8B8B8;
+
+            @media (max-width:768px) {
+                text-align: left;
+            }
+        }
+    }
+   
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #B8B8B8;
+    display: none;
+
+    @media (max-width:768px) {
+        display: block;
+    }
+}
+
+
+.make-call {
+    width: 200px;
+    height: 50px;
+
+    @media (max-width:768px) {
+        display: none;
+    }
+}

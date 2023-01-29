@@ -1,0 +1,75 @@
+.contacts {
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        
+        @media (max-width:1024px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+    }
+}
+.body-contact {
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 40px;
+
+        @media (max-width:500px) {
+            gap: 30px;
+        }
+    }
+
+    &__icons {
+        
+        @media (max-width:1024px) {
+            justify-content: center;
+        }
+    }
+
+    &__map {
+        position: relative;
+
+        @media (max-width:1024px) {
+            align-self: center;
+        }
+
+
+        .map {  
+            position: relative;
+        }
+    }
+}
+
+.element-contact {
+    display: flex;
+    gap: 10px;
+
+    &__title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 145%;
+        color: #303239;
+    }
+}
+
+
+.map-location{
+    position: absolute;
+    top: 150px;
+    left: 345px;
+    cursor: pointer;
+
+    @media (min-width: 770px) {
+        &:hover{
+            transition: all 0.7s;
+            transform: rotate(360deg);
+        }
+    }
+    
+   
+}
