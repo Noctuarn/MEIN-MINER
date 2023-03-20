@@ -27,7 +27,6 @@
 
         @media (max-width:700px) {
             min-width: 250px;
-            // max-width: 500px;
             margin: 0 auto;
         }
         @media (max-width:400px) {
@@ -36,10 +35,10 @@
 
         img{
             z-index: 10;
+            transition: all .7s;
 
             @media (min-width: 770px) {
                 &:hover{
-                    transition: all .7s;
                     transform: scale(1.2);
                 }
             }

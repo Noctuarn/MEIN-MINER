@@ -141,14 +141,7 @@
     padding: 40px 30px 23px 8px;
     position: relative;
     overflow: hidden;
-    
-    @media (min-width: 769px) {
-        
-          &:hover{
-            transition: all .5s;
-            transform: scale(1.1, 1);
-          }
-    }
+    transition: all .5s;
 
     @media (max-width: 768px) {
         width: 90%;

@@ -8,6 +8,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    outline: none;
 }
 
 ul, li{
@@ -55,10 +56,10 @@ a{
 .btn--blue {
     background: linear-gradient(#0D748B  0%, #1A0B73  100%);
     color: white;
+    transition: all .6s ease 0s ;
 
         @media (min-width: 770px) {
               &:hover{
-                transition: all .6s ease 0s ;
                 box-shadow: 0 4px 20px 0 rgba(26, 11, 115, 0.4);
               }
         }
