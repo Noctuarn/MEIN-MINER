@@ -175,11 +175,11 @@ a {
   gap: 44px;
 }
 .links-header #header-email {
-  background: url("/img/header/icons/mail.svg") left no-repeat;
+  background: url("../img/header/icons/mail.svg") left no-repeat;
   padding-left: 26px;
 }
 .links-header #header-phone {
-  background: url("/img/header/icons/phone.svg") left no-repeat;
+  background: url("../img/header/icons/phone.svg") left no-repeat;
   padding-left: 26px;
 }
 .links-header__element a {
